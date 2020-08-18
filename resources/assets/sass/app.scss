@@ -1,0 +1,63 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,600");
+// Variables
+@import "variables";
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~bootstrap-select/dist/css/bootstrap-select.css";
+
+body, html {
+  height: 100%;
+}
+
+.navbar .container {
+  background-color: black;
+  width: 100%;
+  margin: 0;
+}
+
+body.general-body {
+  padding-top: 60px;
+  div.general-nav-col {
+    padding: 0px 4px;
+    .navbar-form{
+      padding: 0px 3px;
+    }
+  }
+  ul.general-nav li a {
+    padding: 7px;
+  }
+  .jumbotron {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+}
+
+div.nav-search {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.product-list {
+
+}
+
+.form-group.required .control-label:after {
+  color: #d00;
+  content: "*";
+  position: absolute;
+  margin-left: 8px;
+  top:7px;
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  body.general-body {
+    padding-top: 110px;
+  }
+}
+
