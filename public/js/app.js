@@ -2112,6 +2112,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "OrderInfo",
   props: ['order', 'productRoute']
@@ -60502,14 +60504,14 @@ var render = function() {
               _c("p", [
                 _vm._v("Price: "),
                 _c("span", { attrs: { id: "price" + item.id } }, [
-                  _vm._v(_vm._s(item.price))
+                  _vm._v(_vm._s(item.price) + " €")
                 ])
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-md-1" }, [
               _c("p", { attrs: { id: "row-total-" + item.id } }, [
-                _vm._v("Total: " + _vm._s(item.rowTotal))
+                _vm._v("Total: " + _vm._s(item.rowTotal) + " €")
               ])
             ]),
             _vm._v(" "),
@@ -60543,7 +60545,7 @@ var render = function() {
         _c("div", { staticClass: "col-md-4 col-md-offset-7" }, [
           _c("div", { staticClass: "form-group" }, [
             _c("label", { attrs: { for: "shipping-select" } }, [
-              _vm._v("Select shipping method: ")
+              _vm._v("Choisissez une méthode d'envoi... ")
             ]),
             _vm._v(" "),
             _c(
@@ -60578,7 +60580,7 @@ var render = function() {
               [
                 !_vm.selected_shipping
                   ? _c("option", { domProps: { value: null } }, [
-                      _vm._v("Select shipping method...")
+                      _vm._v("Choisissez une méthode d'envoi ...")
                     ])
                   : _vm._e(),
                 _vm._v(" "),
@@ -60603,9 +60605,9 @@ var render = function() {
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-10" }, [
           _c("p", { staticClass: "text-right" }, [
-            _vm._v("Subtotal: "),
+            _vm._v("Sous-total: "),
             _c("span", { attrs: { id: "subtotal" } }, [
-              _vm._v(_vm._s(_vm.total))
+              _vm._v(_vm._s(_vm.total) + " €")
             ])
           ]),
           _vm._v(" "),
@@ -60627,7 +60629,7 @@ var render = function() {
               },
               on: { click: _vm.pay }
             },
-            [_vm._v("\n                    Pay\n                ")]
+            [_vm._v("\n                    Payer\n                ")]
           )
         ])
       ])
@@ -73442,17 +73444,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var uiv__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! uiv */ "./node_modules/uiv/dist/uiv.esm.js");
 /**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
+ * Chargement des dépendances
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/assets/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 /**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
+ * Création de l'app
  */
 
 

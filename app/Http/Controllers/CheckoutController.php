@@ -97,11 +97,7 @@ class CheckoutController extends Controller
             }
         }
 
-        if (session()->has('cartProducts')) {
-            session()->forget('cartProducts');
-        }
-        Auth::user()->cart = '';
-        Auth::user()->save();
+
 
         $requestData = array(
             'order_id'    => $order_label,
@@ -129,6 +125,13 @@ class CheckoutController extends Controller
             Order::where('order_label', $request->get('order_id'))->update(['status' => 'process']);
             return redirect('checkout/success')->with('message', "Thank's. Your payment has been successfully completed! The Order #".$request->get('order_id')." has been created.");
         }
+        
+        if (session()->has('cartProducts')) {
+            session()->forget('cartProducts');
+        }
+            Auth::user()->cart = '';
+            Auth::user()->save();
+    
         return redirect('checkout/success')->with('error', 'Payment is NOT successful. PLS, try again');
 
     }

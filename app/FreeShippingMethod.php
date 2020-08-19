@@ -14,11 +14,11 @@ class FreeShippingMethod extends ShippingMethod
 
     static function getLabel()
     {
-        return 'Free Shipping';
+        return 'Envoi gratuit';
     }
 
     static function getDeliveryTime ()
     {
-        return '1-2 weeks';
+        return '1-2 semaines';
     }
 }

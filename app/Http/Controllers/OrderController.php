@@ -74,6 +74,22 @@ class OrderController extends Controller
         return view('shop.order',['order' => $selectedOrder]);
     }
 
+    public function delete (Request $request)
+    {
+
+    }
+
+    public function destroyOrder($id) {
+
+        $userId = Auth::user()->id;
+        $selectedOrder = $this->order->where([['id', '=', $id],['user_id', '=', $userId]])->with('orderData.product')->first();
+    
+        $selectedOrder->delete();
+    
+        return redirect('/orders');
+    
+    }
+
     private function makeCartByOrderId(int $orderId)
     {
         $orderDetails = $this->orderData->where('order_id', $orderId)->get();

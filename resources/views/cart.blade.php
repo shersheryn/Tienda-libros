@@ -25,4 +25,8 @@
 
         </form>
     </div>
+    <button class= "btn btn-primary" onclick="window.open('/shop')">Continuez vos achats</button>
+<br>
+<br> 
+
 @stop

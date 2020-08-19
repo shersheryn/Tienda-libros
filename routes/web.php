@@ -29,6 +29,7 @@ Route::prefix('checkout')->group( function() {
 
 Route::get('/orders', 'OrderController@list')->name('orders');
 Route::get('/order/{id}', 'OrderController@getOrder')->name('order');
+Route::delete('/order/{id}', 'OrderController@destroyOrder')->name('order.destroy');
 Route::put('/order/status', 'OrderController@changeOrderStatus')->name('change.order.status');
 
 Route::prefix('shop')->group( function() {

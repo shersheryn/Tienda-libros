@@ -13,71 +13,7 @@
                         Remove
                     </button>
                 </div>
-                <div class="col-md-2 form-group">
-                    <label class="control-label" :for="'productQty'+item.id">QTY</label>
-                    <input type="number" class="form-control" :name="'productQty'+item.id"
-                           :id="'productQty'+item.id" placeholder="QTY" :value="item.qty"
-                           min="1" max="99" required @change="onChangeQty(idx, $event)">
-                </div>
-                <div class="col-md-1"><p>Price: <span :id="'price'+item.id">{{item.price}} €</span></p>
-                </div>
-                <div class="col-md-1"><p :id="'row-total-'+item.id">Total: {{item.rowTotal}} €</p></div>
-                <input type="hidden" name="isRelatedProduct" v-model="item.is_related">
-            </div>
-            <hr/>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-md-offset-7">
-                <div class="form-group">
-                    <label for="shipping-select">Choisissez une méthode d'envoi... </label>
-                    <select class="form-control" id="shipping-select" v-model="selected_shipping">
-                        <option v-if="!selected_shipping" :value="null">Choisissez une méthode d'envoi ...</option>
-                        <option v-for="method in shipping" :value="method.id">
-                            {{method.label + ', ' + method.time + ', ' + method.rate}}
-                        </option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-10">
-                <p class="text-right">Sous-total: <span id="subtotal">{{total}} €</span></p>
-                <input type="hidden" name="subtotal" :value="total">
-            </div>
-            <div class="col-md-2">
-                <button type="button" id="checkout" class="btn btn-primary"
-                        :disabled="!selected_shipping"
-                        @click="pay"
-                >
-                    Payer
-                </button>
-            </div>
-        </div>
-<!--
-        <template v-if="Object.keys(relatedProduct).length > 0">
-            <hr/>
-            <h3 class="text-center">We also recommend:</h3>
-            <div class="row">
-                <div class="col-md-2">
-                    <a href="#">
-                        <img class="img-thumbnail" width="304" height="236"
-                             :src="'images/'+relatedProduct.image">
-                    </a>
-                </div>
-                <div class="col-md-5">
-                    <h4>{{relatedProduct.name}}</h4>
-                    <p>{{relatedProduct.description}}</p>
-                </div>
-
-                <div class="col-md-2"><p>Price: {{ relatedProduct.price }}</p></div>
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-primary" @click="addRelated">
-                        Add to Cart
-                    </button>
-                </div>
-            </div>
-        </template>
--->
+       
     </div>
 </template>
 
