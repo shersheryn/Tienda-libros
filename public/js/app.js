@@ -60439,7 +60439,7 @@ var render = function() {
             }),
             _vm._v(" "),
             _c("div", { staticClass: "col-md-2" }, [
-              _c("a", { attrs: { href: "/product/" + item.id } }, [
+              _c("a", { attrs: { href: "/shop/" + item.id } }, [
                 _c("img", {
                   staticClass: "img-thumbnail",
                   attrs: {
@@ -60482,7 +60482,7 @@ var render = function() {
                   staticClass: "control-label",
                   attrs: { for: "productQty" + item.id }
                 },
-                [_vm._v("QTY")]
+                [_vm._v("Quantité")]
               ),
               _vm._v(" "),
               _c("input", {
@@ -60491,7 +60491,7 @@ var render = function() {
                   type: "number",
                   name: "productQty" + item.id,
                   id: "productQty" + item.id,
-                  placeholder: "QTY",
+                  placeholder: "Quantité",
                   min: "1",
                   max: "99",
                   required: ""
@@ -60509,14 +60509,14 @@ var render = function() {
               _c("p", [
                 _vm._v("Prix: "),
                 _c("span", { attrs: { id: "price" + item.id } }, [
-                  _vm._v(_vm._s(item.price) + "€")
+                  _vm._v(_vm._s(item.price) + " €")
                 ])
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-md-1" }, [
               _c("p", { attrs: { id: "row-total-" + item.id } }, [
-                _vm._v("Total: " + _vm._s(item.rowTotal) + "€")
+                _vm._v("Total: " + _vm._s(item.rowTotal) + " €")
               ])
             ]),
             _vm._v(" "),
@@ -61201,7 +61201,7 @@ var render = function() {
                     staticClass: "control-label",
                     attrs: { for: "single-productQty" }
                   },
-                  [_vm._v("QTY")]
+                  [_vm._v("Quantité")]
                 ),
                 _vm._v(" "),
                 _c("input", {
@@ -61218,7 +61218,7 @@ var render = function() {
                     type: "number",
                     name: "productQty",
                     id: "single-productQty",
-                    placeholder: "QTY",
+                    placeholder: "Quantité",
                     min: "1",
                     max: "99",
                     required: ""

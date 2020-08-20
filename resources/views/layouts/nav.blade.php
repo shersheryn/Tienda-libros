@@ -25,7 +25,7 @@
                 <div class="col-sm-4 col-lg-5 general-nav-col pull-right" style="margin-top: 6px;">
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right general-nav" style="margin-top: 9px; width: 470px;">
+                    <ul class="nav navbar-nav navbar-right general-nav" style="margin-top: 9px; width: 500px;">
                         <!-- Authentication Links -->
                         @guest
                             <li><a href="{{ route('login') }}">Se connecter</a></li>

@@ -3,7 +3,7 @@
         <div class="product-row" v-for="item, idx in items">
             <div class="row">
                 <input type="hidden" name="productId" :value="item.id">
-                <div class="col-md-2"><a :href="'/product/'+ item.id"><img class="img-thumbnail" :alt="'product id '+item.id"
+                <div class="col-md-2"><a :href="'/shop/'+ item.id"><img class="img-thumbnail" :alt="'product id '+item.id"
                     height="240" :src="'images/'+item.image"></a>
                 </div>
                 <div class="col-md-5">
@@ -14,14 +14,14 @@
                     </button>
                 </div>
                 <div class="col-md-2 form-group">
-                    <label class="control-label" :for="'productQty'+item.id">QTY</label>
+                    <label class="control-label" :for="'productQty'+item.id">Quantité</label>
                     <input type="number" class="form-control" :name="'productQty'+item.id"
-                           :id="'productQty'+item.id" placeholder="QTY" :value="item.qty"
+                           :id="'productQty'+item.id" placeholder="Quantité" :value="item.qty"
                            min="1" max="99" required @change="onChangeQty(idx, $event)">
                 </div>
-                <div class="col-md-1"><p>Prix: <span :id="'price'+item.id">{{item.price}}€</span></p>
+                <div class="col-md-1"><p>Prix: <span :id="'price'+item.id">{{item.price}} €</span></p>
                 </div>
-                <div class="col-md-1"><p :id="'row-total-'+item.id">Total: {{item.rowTotal}}€</p></div>
+                <div class="col-md-1"><p :id="'row-total-'+item.id">Total: {{item.rowTotal}} €</p></div>
                 <input type="hidden" name="isRelatedProduct" v-model="item.is_related">
             </div>
             <hr/>

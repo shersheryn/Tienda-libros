@@ -9,9 +9,9 @@
                     <input type="hidden" name="productId" :value="itemData.id">
                     <div class="row">
                         <div class="form-group col-sm-6">
-                            <label class="control-label" for="single-productQty">QTY</label>
+                            <label class="control-label" for="single-productQty">Quantité</label>
                             <input type="number" class="form-control" name="productQty"
-                                   id="single-productQty" placeholder="QTY" v-model="qty"
+                                   id="single-productQty" placeholder="Quantité" v-model="qty"
                                    min="1" max="99" required>
                         </div>
 
