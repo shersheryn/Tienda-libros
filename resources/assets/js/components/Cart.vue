@@ -10,7 +10,7 @@
                     <h4>{{item.name}}</h4>
                     <p>{{item.description}}</p>
                     <button class="btn btn-link" :id="'remove-'+item.id" type="button" @click="remove(item)">
-                        Remove
+                        Retirer du panier
                     </button>
                 </div>
                 <div class="col-md-2 form-group">
@@ -19,9 +19,9 @@
                            :id="'productQty'+item.id" placeholder="QTY" :value="item.qty"
                            min="1" max="99" required @change="onChangeQty(idx, $event)">
                 </div>
-                <div class="col-md-1"><p>Price: <span :id="'price'+item.id">{{item.price}} €</span></p>
+                <div class="col-md-1"><p>Prix: <span :id="'price'+item.id">{{item.price}}€</span></p>
                 </div>
-                <div class="col-md-1"><p :id="'row-total-'+item.id">Total: {{item.rowTotal}} €</p></div>
+                <div class="col-md-1"><p :id="'row-total-'+item.id">Total: {{item.rowTotal}}€</p></div>
                 <input type="hidden" name="isRelatedProduct" v-model="item.is_related">
             </div>
             <hr/>

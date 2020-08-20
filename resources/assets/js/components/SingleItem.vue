@@ -4,7 +4,7 @@
             <div class="col-sm-7">
                 <form method="post" :action="baseUrl+'/cart/add-to-cart'">
                     <p>{{ itemData.description }}</p>
-                    <p>Price: <span id="single-price">{{ itemData.price }}</span></p>
+                    <p>Prix: <span id="single-price">{{ itemData.price }} €</span></p>
                     <input type="hidden" name="_token" :value="csrf">
                     <input type="hidden" name="productId" :value="itemData.id">
                     <div class="row">
@@ -16,8 +16,8 @@
                         </div>
 
                     </div>
-                    <div>Total: {{total}}</div>
-                    <button class="btn btn-primary" type="submit">ADD TO CART</button>
+                    <div>Total: {{total}} €</div>
+                    <button class="btn btn-primary" type="submit">AJOUTER AU PANIER</button>
                 </form>
             </div>
             <div class="col-sm-5">

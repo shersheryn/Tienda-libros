@@ -5,7 +5,7 @@
                 <a :href="baseUrl+'/shop/' + product.id">
                     <h4 class="header" style="padding: 0 20px;">{{product.name}}</h4>
                 </a>
-                <p>Category: {{product.catalogs.name}}</p>
+                <p>Catégorie: {{product.catalogs.name}}</p>
             </div>
             <div class="effect" @click="slide">
                 <span class="glyphicon glyphicon-triangle-bottom" :class="{'up':!active}"></span>
@@ -24,7 +24,7 @@
                     </div>
                 </a>
             </div>
-            <p>Price: {{product.price}}
+            <p>Prix: {{product.price}} €
                 <button type="button" class="btn btn-link add-to-cart" @click="addToCart(product.id)">
                     AJOUTER
                 </button>

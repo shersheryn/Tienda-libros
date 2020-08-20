@@ -21,7 +21,10 @@
                 </button>
             </form>
         </div>
+        <br>
     </div>
+    <br>
+    <br>
 @endforeach
 <div class="products-pagination">
 {{ $products->links() }}

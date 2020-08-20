@@ -11,6 +11,7 @@
         </div>
     </div>
     
+    <!--
     <div class="row" style="margin-bottom: 20px;">
         <div class="col-sm-4 col-lg-offset-1">
             <form name="search" method="POST" action="{{ route('users.search') }}">
@@ -27,6 +28,7 @@
         </div>
 
     </div> 
+    -->
     
     <div class="users-list">
         @include('admin.users-load')

@@ -60469,7 +60469,7 @@ var render = function() {
                 },
                 [
                   _vm._v(
-                    "\n                        Remove\n                    "
+                    "\n                        Retirer du panier\n                    "
                   )
                 ]
               )
@@ -60507,16 +60507,16 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "col-md-1" }, [
               _c("p", [
-                _vm._v("Price: "),
+                _vm._v("Prix: "),
                 _c("span", { attrs: { id: "price" + item.id } }, [
-                  _vm._v(_vm._s(item.price) + " €")
+                  _vm._v(_vm._s(item.price) + "€")
                 ])
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-md-1" }, [
               _c("p", { attrs: { id: "row-total-" + item.id } }, [
-                _vm._v("Total: " + _vm._s(item.rowTotal) + " €")
+                _vm._v("Total: " + _vm._s(item.rowTotal) + "€")
               ])
             ]),
             _vm._v(" "),
@@ -60723,7 +60723,9 @@ var render = function() {
         _vm._v(_vm._s(_vm.count) + " ")
       ]),
       _vm._v("\n    Total: "),
-      _c("span", { attrs: { id: "nav-total" } }, [_vm._v(_vm._s(_vm.total))])
+      _c("span", { attrs: { id: "nav-total" } }, [
+        _vm._v(_vm._s(_vm.total) + "€")
+      ])
     ])
   ])
 }
@@ -60903,7 +60905,7 @@ var render = function() {
               ]
             ),
             _vm._v(" "),
-            _c("p", [_vm._v("Category: " + _vm._s(_vm.product.catalogs.name))])
+            _c("p", [_vm._v("Catégorie: " + _vm._s(_vm.product.catalogs.name))])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "effect", on: { click: _vm.slide } }, [
@@ -60967,7 +60969,7 @@ var render = function() {
           ),
           _vm._v(" "),
           _c("p", [
-            _vm._v("Price: " + _vm._s(_vm.product.price) + "\n            "),
+            _vm._v("Prix: " + _vm._s(_vm.product.price) + " €\n            "),
             _c(
               "button",
               {
@@ -61175,9 +61177,9 @@ var render = function() {
             _c("p", [_vm._v(_vm._s(_vm.itemData.description))]),
             _vm._v(" "),
             _c("p", [
-              _vm._v("Price: "),
+              _vm._v("Prix: "),
               _c("span", { attrs: { id: "single-price" } }, [
-                _vm._v(_vm._s(_vm.itemData.price))
+                _vm._v(_vm._s(_vm.itemData.price) + " €")
               ])
             ]),
             _vm._v(" "),
@@ -61234,12 +61236,12 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _c("div", [_vm._v("Total: " + _vm._s(_vm.total))]),
+            _c("div", [_vm._v("Total: " + _vm._s(_vm.total) + " €")]),
             _vm._v(" "),
             _c(
               "button",
               { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-              [_vm._v("ADD TO CART")]
+              [_vm._v("AJOUTER AU PANIER")]
             )
           ]
         )

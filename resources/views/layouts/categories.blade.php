@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <a href="{{asset('shop')}}">Shop</a>
+                <a href="{{asset('shop')}}">Magasin</a>
                 @php $last_elem_flag = count($parent_catalogs); @endphp
                 @foreach( $parent_catalogs as $parent_catalog )
                     @php --$last_elem_flag; @endphp

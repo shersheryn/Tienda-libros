@@ -3,7 +3,7 @@
         Estampes: <span
                 id="nav-items">{{ count }} </span>
         Total: <span
-                id="nav-total">{{ total }}</span>
+                id="nav-total">{{ total }}€</span>
     </a>
     </li>
 </template>

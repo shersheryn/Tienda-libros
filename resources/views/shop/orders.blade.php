@@ -5,13 +5,13 @@
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h3 class="display-3">Orders</h3>
+            <h3 class="display-3">Vos commandes</h3>
         </div>
     </div>
     <div class="row orders-list" style="width: 110%; margin-left: 25px;">
         <div class="row" style="margin-bottom: 5px;">
             <div class="col-md-2">ID</div>
-            <div class="col-md-2">Created</div>
+            <div class="col-md-2">Création</div>
             <div class="col-md-2">Total</div>
             <div class="col-md-2">Status</div>
         </div>

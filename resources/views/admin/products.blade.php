@@ -16,13 +16,13 @@
         <div class="col-sm-4 col-lg-offset-1">
        
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search by name" id="nav-search">
+                <!-- <input type="text" class="form-control" placeholder="Search by name" id="nav-search"> 
                     <div class="input-group-btn">
                         <button class="btn btn-default" type="button" id="nav-search-btn">
                             <i class="glyphicon glyphicon-search"></i>
                         </button>
                     </div>
-<!--        
+        
             </div>
             </div>
             <div class="col-sm-4">
@@ -35,6 +35,7 @@
                     @endforeach
                 </select>
 -->
+            </div>
         </div>
     </div>
 
