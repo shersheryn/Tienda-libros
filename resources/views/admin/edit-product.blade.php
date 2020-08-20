@@ -67,7 +67,7 @@
                                placeholder="Price" minlength="1" maxlength="10">
                     </div>
                 </div>
-                {{--
+                
                 <div class="form-group">
                     <label for="inputFile" class="col-sm-2 control-label">Select Image</label>
                     <div class="col-sm-10">
@@ -85,7 +85,7 @@
                         <img id="blah" src="@if ($product) {{ url('images/'.$product->image) }} @else # @endif" alt="image" class="img-thumbnail" alt="Product image" width="200">
                     </div>
                 </div>
-                --}}
+                
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <button class="btn btn-default" type="submit">
