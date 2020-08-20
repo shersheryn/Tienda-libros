@@ -130,7 +130,7 @@ class AdminProductsController extends Controller
 
         if ($request->hasFile('image')) {
             $image = $request->file('image');
-            $imageName = 'prod_' . time() . '.' . $image->getClientOriginalExtension();
+            $imageName = $image->getClientOriginalName();
             $imageDestinationPath = public_path('images/products/');
             $image->move($imageDestinationPath, $imageName);
             $product->image = 'products/' . $imageName;
