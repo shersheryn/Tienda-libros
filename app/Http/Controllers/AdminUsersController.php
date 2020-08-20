@@ -21,10 +21,20 @@ class AdminUsersController extends Controller
         return view('admin.users', ['users' => $users]);
     }
 
+
     public function delete (Request $request)
     {
 
+        if (!$request->id) return back()->withErrors('Server Error... Please try again.');
+
+        $user = User::find($request->id);
+
+        if (!$user) return back()->withErrors('Server Error... Product not found');
+
+        $user->delete();
+        return redirect()->back()->with('message', 'User ' . $user->name . ' has been deleted!');
     }
+
 
     public function search(Request $request)
     {

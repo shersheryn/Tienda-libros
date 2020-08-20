@@ -83,6 +83,9 @@ Route::prefix('admin')->group( function() {
     Route::get('/users', 'AdminUsersController@list')->name('admin.users');
     Route::get('/edit-user/{id}', 'AdminUsersController@showEditForm');
     Route::put('/user', 'AdminUsersController@update')->name('user.update');
+
+    Route::delete('/users', 'AdminUsersController@delete')->name('user.destroy');
+    
     Route::post('/users', 'AdminUsersController@search')->name('users.search');
     Route::put('/users/', 'AdminUsersController@deleteCart')->name('cart.delete');
 

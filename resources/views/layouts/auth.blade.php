@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'UKIYO-E') }}</title>
+    <title>UKIYO-E</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -20,8 +20,9 @@
                 <div class="navbar-header">
 
                     <!-- Branding Image -->
+                <a href="/shop">
                 <img src= {{ asset('images/UKIYO1_V2.png') }} title="UKIYO-E LOGO" alt="Notre logo">
-
+                </a>
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                         <span class="sr-only">Toggle Navigation</span>

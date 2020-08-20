@@ -11,16 +11,18 @@
         <div class="col-md-1">{{$product->price}}</div>
         <div class="col-md-2">{{$product->catalogs->name}}</div>
         <div class="col-md-1"><a href="{{ url('/admin/edit-product/'.$product->id) }}">edit</a></div>
+        
         <div class="col-md-1">
             <form method="POST" action="{{ route('product.delete') }}">
                 <input type="hidden" name="id" value="{{ $product->id }}">
                 {{ method_field('DELETE') }}
                 {{ csrf_field() }}
                 <button class="btn btn-xs btn-default"  type="submit" data-toggle="confirmation-singleton">
-                    remove
+                    Suppr
                 </button>
             </form>
         </div>
+        
         <br>
     </div>
     <br>
