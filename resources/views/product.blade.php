@@ -23,4 +23,5 @@
         <input type="hidden" name="isRelatedProduct[]" value="{{ $product['is_related'] }}">
     </div>
     <hr/>
+    
 </div>

@@ -100,6 +100,6 @@ class OrderController extends Controller
         foreach ($orderDetails as $orderRow) {
             $this->cartService->addToCart($orderRow->product_id, $orderRow->qty);
         }
-        return;
+        return redirect('/cart');
     }
 }

@@ -18,10 +18,11 @@
     <img src= {{ asset('images/fondec2.jpg') }} style="  width: 100%; height: 100%; display: table-cell; vertical-align: middle;" title="Banner" alt="bannière">
   <div class="container" style="display: table;"> 
    
-<!--    
+{{--    
     <h1 class="display-4">Fluid jumbotron</h1>
     <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
- --> 
+ --}} 
+ 
   </div>
 </div>
     @include('layouts.categories')
@@ -29,13 +30,21 @@
 
     <div class="container" style="height: 80px, margin-bottom: 40px;">
     <br>
-        <div class="row" style="height: 80px">
+        <div class="row" style="height: 80px; display: flex; justify-content: center;">
+        
+            {{--
             <div class="col-xs-4 col-sm-3 col-lg-2">
                 @yield('left-column')
-            </div>
-            <div class="col-xs-8 col-sm-9 col-lg-10 content">
+            </div> 
+            --}}
+            <div class="col-xs-8 col-sm-9 col-lg-10 content" style="margin: 0; padding: 0;" >
                 @include('layouts.error')
                 @yield('content')
+                <br>
+    <br>
+    <br>
+    <br>
+    <br>
             </div>
         </div>
     </div>

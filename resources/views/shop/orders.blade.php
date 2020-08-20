@@ -8,7 +8,7 @@
             <h3 class="display-3">Orders</h3>
         </div>
     </div>
-    <div class="row orders-list" style="width: 110%">
+    <div class="row orders-list" style="width: 110%; margin-left: 25px;">
         <div class="row" style="margin-bottom: 5px;">
             <div class="col-md-2">ID</div>
             <div class="col-md-2">Created</div>
@@ -31,16 +31,26 @@
                     </form>
                     </div>
                     
+                {{-- 
+                    <div class="col-md-1" style="margin: 0 15px;">
+                    <form method="PUT" action="{{ route('change.order.status', [$order->id]) }}">
+                        {{ csrf_field() }}
+                        {{ method_field('PUT') }}
+                        <button style="padding: 2px 8px; margin-right:10px;" class="btn btn-primary" type="submit">Renvoyer</button>
+                    </form>
+                    </div>
+                   
                     <div class="col-md-1" style="margin: 0 15px;">
                     <button style="padding: 2px 8px;" class="btn btn-primary">Renvoyer</button>
                     </div>
-                    <!--
+                    
                     <div class="col-md-2">
                         <select class="form-control" id="order-status-actions" data-order-id="{{$order->id}}">
                             @include('shop.order-status-options')
                         </select>
                     </div>
-                    -->
+                --}}
+
                 </div>
             @endforeach
             <div class="users-pagination">

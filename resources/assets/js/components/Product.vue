@@ -3,7 +3,7 @@
         <div class="cart-wrapper">
             <div class="cart-header">
                 <a :href="baseUrl+'/shop/' + product.id">
-                    <h4 class="header">{{product.name}}</h4>
+                    <h4 class="header" style="padding: 0 20px;">{{product.name}}</h4>
                 </a>
                 <p>Category: {{product.catalogs.name}}</p>
             </div>
@@ -26,7 +26,7 @@
             </div>
             <p>Price: {{product.price}}
                 <button type="button" class="btn btn-link add-to-cart" @click="addToCart(product.id)">
-                    ADD TO CART
+                    AJOUTER
                 </button>
             </p>
         </div>

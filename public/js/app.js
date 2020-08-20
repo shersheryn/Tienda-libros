@@ -2415,6 +2415,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'SingleItem',
   props: ['itemData'],
@@ -60748,70 +60753,77 @@ var render = function() {
     _c("div", { staticClass: "jumbotron jumbotron-fluid" }, [
       _c("div", { staticClass: "container" }, [
         _c("h3", { staticClass: "display-3" }, [
-          _vm._v("Order #" + _vm._s(_vm.order.id))
+          _vm._v("Commande #" + _vm._s(_vm.order.id))
         ])
       ])
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "row orders-list" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "row", staticStyle: { "margin-bottom": "5px" } },
-        [
-          _c("div", { staticClass: "col-md-2" }, [
-            _vm._v(_vm._s(_vm.order.id))
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-2" }, [
-            _vm._v(_vm._s(_vm._f("formatDate")(_vm.order.created_at)))
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-2" }, [
-            _vm._v(_vm._s(_vm.order.total))
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-md-2" }, [
-            _vm._v(_vm._s(_vm.order.status))
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "row", staticStyle: { "margin-bottom": "5px" } },
-        [
-          _c("table", { staticClass: "table table-striped" }, [
-            _vm._m(1),
+    _c(
+      "div",
+      {
+        staticClass: "row orders-list",
+        staticStyle: { width: "90%", "margin-left": "40px" }
+      },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "row", staticStyle: { "margin-bottom": "5px" } },
+          [
+            _c("div", { staticClass: "col-md-2" }, [
+              _vm._v(_vm._s(_vm.order.id))
+            ]),
             _vm._v(" "),
-            _c(
-              "tbody",
-              _vm._l(_vm.order.order_data, function(product) {
-                return _c("tr", [
-                  _c("td", [
-                    _c(
-                      "a",
-                      {
-                        attrs: {
-                          href: _vm.productRoute + "/" + product.product_id
-                        }
-                      },
-                      [_vm._v(_vm._s(product.product.name))]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(product.price))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(product.qty))])
-                ])
-              }),
-              0
-            )
-          ])
-        ]
-      )
-    ])
+            _c("div", { staticClass: "col-md-2" }, [
+              _vm._v(_vm._s(_vm._f("formatDate")(_vm.order.created_at)))
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-2" }, [
+              _vm._v(_vm._s(_vm.order.total))
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-2" }, [
+              _vm._v(_vm._s(_vm.order.status))
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "row", staticStyle: { "margin-bottom": "5px" } },
+          [
+            _c("table", { staticClass: "table table-striped" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.order.order_data, function(product) {
+                  return _c("tr", [
+                    _c("td", [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href: _vm.productRoute + "/" + product.product_id
+                          }
+                        },
+                        [_vm._v(_vm._s(product.product.name))]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(product.price))]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v(_vm._s(product.qty))])
+                  ])
+                }),
+                0
+              )
+            ])
+          ]
+        )
+      ]
+    )
   ])
 }
 var staticRenderFns = [
@@ -60826,7 +60838,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-md-2" }, [_c("strong", [_vm._v("ID")])]),
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2" }, [
-          _c("strong", [_vm._v("Created")])
+          _c("strong", [_vm._v("Création")])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "col-md-2" }, [
@@ -60845,11 +60857,11 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("thead", [
       _c("tr", [
-        _c("th", { staticClass: "col-sm-8" }, [_vm._v("Product")]),
+        _c("th", { staticClass: "col-sm-8" }, [_vm._v("Produit")]),
         _vm._v(" "),
-        _c("th", { staticClass: "col-sm-2" }, [_vm._v("Price")]),
+        _c("th", { staticClass: "col-sm-2" }, [_vm._v("Prix")]),
         _vm._v(" "),
-        _c("th", { staticClass: "col-sm-2" }, [_vm._v("QTY")])
+        _c("th", { staticClass: "col-sm-2" }, [_vm._v("Quantité")])
       ])
     ])
   }
@@ -60883,9 +60895,11 @@ var render = function() {
               "a",
               { attrs: { href: _vm.baseUrl + "/shop/" + _vm.product.id } },
               [
-                _c("h4", { staticClass: "header" }, [
-                  _vm._v(_vm._s(_vm.product.name))
-                ])
+                _c(
+                  "h4",
+                  { staticClass: "header", staticStyle: { padding: "0 20px" } },
+                  [_vm._v(_vm._s(_vm.product.name))]
+                )
               ]
             ),
             _vm._v(" "),
@@ -60965,7 +60979,7 @@ var render = function() {
                   }
                 }
               },
-              [_vm._v("\n                ADD TO CART\n            ")]
+              [_vm._v("\n                AJOUTER\n            ")]
             )
           ])
         ])
@@ -61149,122 +61163,107 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-sm-7" }, [
-          _c(
-            "form",
-            {
-              attrs: {
-                method: "post",
-                action: _vm.baseUrl + "/cart/add-to-cart"
-              }
-            },
-            [
-              _c("p", [_vm._v(_vm._s(_vm.itemData.description))]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v("Price: "),
-                _c("span", { attrs: { id: "single-price" } }, [
-                  _vm._v(_vm._s(_vm.itemData.price))
-                ])
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "hidden", name: "_token" },
-                domProps: { value: _vm.csrf }
-              }),
-              _vm._v(" "),
-              _c("input", {
-                attrs: { type: "hidden", name: "productId" },
-                domProps: { value: _vm.itemData.id }
-              }),
-              _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "form-group col-sm-6" }, [
-                  _c(
-                    "label",
+  return _c("div", [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-7" }, [
+        _c(
+          "form",
+          {
+            attrs: { method: "post", action: _vm.baseUrl + "/cart/add-to-cart" }
+          },
+          [
+            _c("p", [_vm._v(_vm._s(_vm.itemData.description))]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("Price: "),
+              _c("span", { attrs: { id: "single-price" } }, [
+                _vm._v(_vm._s(_vm.itemData.price))
+              ])
+            ]),
+            _vm._v(" "),
+            _c("input", {
+              attrs: { type: "hidden", name: "_token" },
+              domProps: { value: _vm.csrf }
+            }),
+            _vm._v(" "),
+            _c("input", {
+              attrs: { type: "hidden", name: "productId" },
+              domProps: { value: _vm.itemData.id }
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "form-group col-sm-6" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "control-label",
+                    attrs: { for: "single-productQty" }
+                  },
+                  [_vm._v("QTY")]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  directives: [
                     {
-                      staticClass: "control-label",
-                      attrs: { for: "single-productQty" }
-                    },
-                    [_vm._v("QTY")]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.qty,
-                        expression: "qty"
-                      }
-                    ],
-                    staticClass: "form-control",
-                    attrs: {
-                      type: "number",
-                      name: "productQty",
-                      id: "single-productQty",
-                      placeholder: "QTY",
-                      min: "1",
-                      max: "99",
-                      required: ""
-                    },
-                    domProps: { value: _vm.qty },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.qty = $event.target.value
-                      }
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.qty,
+                      expression: "qty"
                     }
-                  })
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", [_vm._v("Total: " + _vm._s(_vm.total))]),
-              _vm._v(" "),
-              _c(
-                "button",
-                { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-                [_vm._v("ADD TO CART")]
-              )
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-sm-5" }, [
-          _c("img", {
-            staticClass: "img-thumbnail",
-            attrs: {
-              alt: "product id" + _vm.itemData.id,
-              width: "400",
-              height: "300",
-              src: _vm.baseUrl + "/images/" + _vm.itemData.image
-            }
-          })
-        ])
+                  ],
+                  staticClass: "form-control",
+                  attrs: {
+                    type: "number",
+                    name: "productQty",
+                    id: "single-productQty",
+                    placeholder: "QTY",
+                    min: "1",
+                    max: "99",
+                    required: ""
+                  },
+                  domProps: { value: _vm.qty },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.qty = $event.target.value
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", [_vm._v("Total: " + _vm._s(_vm.total))]),
+            _vm._v(" "),
+            _c(
+              "button",
+              { staticClass: "btn btn-primary", attrs: { type: "submit" } },
+              [_vm._v("ADD TO CART")]
+            )
+          ]
+        )
       ]),
       _vm._v(" "),
-      _vm._l(_vm.itemData.properties, function(property) {
-        return _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-sm-7" }, [
-            _vm._v(
-              "\n            " +
-                _vm._s(property.properties.name) +
-                " : " +
-                _vm._s(property.value) +
-                "\n        "
-            )
-          ])
-        ])
-      })
-    ],
-    2
-  )
+      _c("div", { staticClass: "col-sm-5" }, [
+        _c("img", {
+          staticClass: "img-thumbnail",
+          attrs: {
+            alt: "product id" + _vm.itemData.id,
+            width: "400",
+            height: "300",
+            src: _vm.baseUrl + "/images/" + _vm.itemData.image
+          }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _c("br")
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true

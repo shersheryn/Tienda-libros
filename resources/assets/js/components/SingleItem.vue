@@ -26,11 +26,16 @@
                      :src="baseUrl+'/images/'+itemData.image">
             </div>
         </div>
+       <!--
         <div class="row" v-for="property in itemData.properties">
             <div class="col-sm-7">
                 {{property.properties.name}}&nbsp;:&nbsp;{{property.value}}
             </div>
         </div>
+        -->
+        <br>
+        <br>
+        <br>
     </div>
 </template>
 
