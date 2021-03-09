@@ -43,8 +43,7 @@ services:
       - "3307:3306"
     environment:
       MYSQL_DATABASE: cart_prob
-#      MYSQL_ROOT_PASSWORD: carabistouille
-      MYSQL_PASSWORD: carabistouille
+      MYSQL_PASSWORD: your_awesomely_secured_password
       MYSQL_USER: antoinadmin
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
