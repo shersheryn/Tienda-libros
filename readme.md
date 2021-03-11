@@ -1,5 +1,9 @@
 ## NOT HOSTED ANYMORE 
-### Pour consulter le site : http://35.180.113.111:8080/
 
-Hébergé sur serveur virtuel AWS/EC2 
+### For a project overview, please read the 2 pdf documents in root directory, "cahier des charges" and Keynote
+
+
+
+Previously hosted on http://35.180.113.111:8080/  
+(AWS/EC2)
 
