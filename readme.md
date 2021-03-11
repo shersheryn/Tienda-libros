@@ -1,6 +1,6 @@
 ## NOT HOSTED ANYMORE 
 
-### For a project overview, please read the 2 pdf documents in root directory, "cahier des charges" and Keynote
+### For a project overview, please read the 2 pdf documents in root directory, "cahier des charges" and "Keynote"
 
 
 
