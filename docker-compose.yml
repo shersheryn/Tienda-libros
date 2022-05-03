@@ -44,7 +44,7 @@ services:
     environment:
       MYSQL_DATABASE: cart_prob
       MYSQL_PASSWORD: your_awesomely_secured_password
-      MYSQL_USER: antoinadmin
+      MYSQL_USER: usernameadmin
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
