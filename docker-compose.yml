@@ -42,9 +42,10 @@ services:
     ports:
       - "3307:3306"
     environment:
-      MYSQL_DATABASE: cart_prob
-      MYSQL_PASSWORD: your_awesomely_secured_password
-      MYSQL_USER: usernameadmin
+      MYSQL_DATABASE: homestead5
+      MYSQL_PASSWORD: carabistouille
+      MYSQL_USER: antoinadmin
+      MYSQL_ROOT_PASSWORD: root1
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
